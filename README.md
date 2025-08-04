@@ -70,19 +70,19 @@ exit
 ````Bash
 docker ps
 ````
-### Encerre cada container
+### Encerre cada container:
 ````Bash
 docker stop <container_id>
 ````
-### Você também pode remover containers utilizando 
+### Remova os containers utilizando:
 ````Bash
 docker rm <container_id>
 ````
-## Liste todas as imagens
+## Liste todas as imagens:
 ````Bash
 docker images
 ````
-### Remova cada imagem
+### Remova cada imagem:
 ````Bash
 docker rmi <image_id>
 ````
