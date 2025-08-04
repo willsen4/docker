@@ -100,4 +100,15 @@ sudo rm -rf /var/lib/docker /var/lib/containerd
 ````Bash
 sudo apt autoremove -y
 ````
-### Reinicie o sistema.
+### Lista diretórios:
+````Bash
+ls
+````
+### Deleta diretórios:
+````Bash
+rm <diretorio> -Rf
+````
+### Reinicie o sistema:
+````Bash
+sudo reboot
+````
