@@ -58,3 +58,46 @@ sudo usermod -aG docker $USER
 exit
 ````
 ### Depois de reconectar via SSH, você poderá executar comandos docker sem sudo.
+
+-------------------------
+
+# Removendo o Docker do Linux Debian/Ubuntu
+
+### Para desinstalar o Docker do Linux, você precisa remover os pacotes Docker, suas imagens, containers e volumes. Primeiro, encerre todos os containers em execução. Depois, remova as imagens e, finalmente, desinstale os pacotes Docker utilizando os comandos específicos da sua distribuição Linux. 
+
+## Encerre os containers em execução:
+### Liste todos os containers em execução:
+````Bash
+docker ps
+````
+### Encerre cada container
+````Bash
+docker stop <container_id>
+````
+### Você também pode remover containers utilizando 
+````Bash
+docker rm <container_id>
+````
+## Liste todas as imagens
+````Bash
+docker images
+````
+### Remova cada imagem
+````Bash
+docker rmi <image_id>
+````
+## Desinstale os pacotes Docker: 
+### Para distribuições baseadas em Debian/Ubuntu:
+### Remova os pacotes Docker: 
+````Bash
+sudo apt remove docker-ce docker-ce-cli containerd.io
+````
+### Remova arquivos e diretórios restantes: 
+````Bash
+sudo rm -rf /var/lib/docker /var/lib/containerd
+````
+### Remova pacotes não utilizados:
+````Bash
+sudo apt autoremove -y
+````
+### Reinicie o sistema.
