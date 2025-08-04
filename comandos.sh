@@ -19,7 +19,7 @@ rm nome_do_diretorio -Rf
 # exemplo: 
 rm mysql-docker -Rf
 
-# Entra na pasta do teampass
+# Entra na pasta do mysql
 cd mysql-docker
 
 # Reinicia o serviço
@@ -30,7 +30,7 @@ docker compose restart mysql-app
 # Remove o conteineres
 docker compose down
 
-# Recriar os contêineres
+# Recriar os conteineres
 docker compose up -d
 
 # Forçar a recriar os conteineres
