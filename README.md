@@ -1,5 +1,7 @@
 # Instalando no Ubuntu ou Debian
 
+## O Docker é uma plataforma de código aberto que permite automatizar a implantação, o escalonamento e o gerenciamento de aplicações em contêineres. Ele funciona como um sistema de virtualização leve, onde as aplicações são empacotadas em contêineres, que incluem tudo o que é necessário para executar a aplicação. Isso garante que a aplicação funcione de forma consistente em qualquer ambiente, seja ele desenvolvimento, teste ou produção. 
+
 ### Atualizar os pacotes existentes:
 ````Bash
 sudo apt update
