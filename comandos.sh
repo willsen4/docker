@@ -1,3 +1,6 @@
+# Reiniciar o Docker
+sudo systemctl restart docker
+
 # Lista Diretorio
 ls
 # Lista permissões do diretório
