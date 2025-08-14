@@ -5,6 +5,9 @@
 ### Atualizar os pacotes existentes:
 ````Bash
 sudo apt update
+````
+
+````Bash
 sudo apt upgrade -y
 ````
 --------------
